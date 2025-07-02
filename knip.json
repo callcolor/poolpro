@@ -1,0 +1,8 @@
+{
+  "workspaces": {
+    ".": {
+      "entry": ["client/src/main.tsx"],
+      "project": ["server/**/*.{js,ts,tsx}", "client/**/*.{js,ts,tsx}"]
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import { type Contact } from "@shared/schema";
 
-export interface IStorage {
+interface IStorage {
   createContact(contact: Contact): Promise<string>;
 }
 
-export class Storage implements IStorage {
+class Storage implements IStorage {
   async createContact(contact: Contact) {
     if (!process.env.POOLPROSWH) {
       throw new Error("POOLPROSWH environment variable is not set.");
