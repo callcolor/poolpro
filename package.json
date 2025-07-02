@@ -10,7 +10,7 @@
     "check": "tsc",
     "db:push": "drizzle-kit push",
     "podman:build": "podman build -t poolpro .",
-    "podman:run": "podman run -e POOLPROSWH -p 5010:5010 --name poolpro poolpro",
+    "podman:restart": "podman rm -f poolpro && podman run -e POOLPROSWH -d -p 5010:5010 --name poolpro poolpro",
     "knip": "knip"
   },
   "dependencies": {
