@@ -1,28 +1,28 @@
-import { 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  Clock,
   Award,
   Facebook,
   Instagram,
   Twitter,
-  Star
+  Star,
 } from "lucide-react";
 
 const services = [
   "Pool Cleaning",
-  "Chemical Balancing", 
+  "Chemical Balancing",
   "Equipment Repair",
   "Green Pool Recovery",
-  "Pool Opening/Closing"
+  "Pool Opening/Closing",
 ];
 
 const company = [
   "About Us",
-  "Reviews", 
+  "Reviews",
   "Contact",
-  "Service Areas",
-  "Careers"
+  // "Service Areas",
+  "Careers",
 ];
 
 export default function Footer() {
@@ -55,8 +55,8 @@ export default function Footer() {
               <span className="text-xl font-bold">Heartland Pool Care</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Your trusted partner for professional pool cleaning and maintenance 
-              services. Keeping your pool crystal clear since 2014.
+              Your trusted partner for professional pool cleaning and
+              maintenance services. Keeping your pool crystal clear since 2014.
             </p>
             <div className="flex space-x-4">
               <button className="text-gray-400 hover:text-cyan-400 transition-colors">
@@ -79,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index}>
-                  <button 
+                  <button
                     onClick={() => scrollToSection("services")}
                     className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
@@ -95,10 +95,11 @@ export default function Footer() {
             <ul className="space-y-2">
               {company.map((item, index) => (
                 <li key={index}>
-                  <button 
+                  <button
                     onClick={() => {
                       if (item === "About Us") scrollToSection("about");
-                      else if (item === "Reviews") scrollToSection("testimonials");
+                      else if (item === "Reviews")
+                        scrollToSection("testimonials");
                       else if (item === "Contact") scrollToSection("contact");
                     }}
                     className="text-gray-400 hover:text-white transition-colors text-sm"
@@ -115,8 +116,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center text-sm">
                 <Phone className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
-                <a 
-                  href="tel:+18162581782" 
+                <a
+                  href="tel:+18162581782"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   (816) 258-1782
@@ -124,7 +125,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center text-sm">
                 <Mail className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
-                <a 
+                <a
                   href="mailto:info@HeartlandPoolCare.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
@@ -134,7 +135,8 @@ export default function Footer() {
               <li className="flex items-start text-sm">
                 <Clock className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400">
-                  Mon-Fri: 8AM-6PM<br />
+                  Mon-Fri: 8AM-6PM
+                  <br />
                   Sat: 8AM-4PM
                 </span>
               </li>

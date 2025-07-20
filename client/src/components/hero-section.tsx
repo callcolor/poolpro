@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Phone } from "lucide-react";
+import heroImage from "../img/hero1.jpg";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -10,7 +11,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen pool-gradient flex items-center pt-16">
+    <section
+      id="home"
+      className="min-h-screen pool-gradient flex items-center pt-16"
+    >
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -24,8 +28,8 @@ export default function HeroSection() {
               500+ satisfied customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 onClick={scrollToContact}
               >
@@ -59,7 +63,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                src={heroImage}
                 alt="Professional pool cleaning service"
                 className="w-full h-full object-cover"
               />

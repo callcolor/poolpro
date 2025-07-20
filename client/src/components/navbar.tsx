@@ -26,31 +26,41 @@ export default function Navbar() {
     <>
       <button
         onClick={() => scrollToSection("home")}
-        className={`${mobile ? "block w-full text-left py-2" : ""} text-gray-700 hover:text-blue-600 transition-colors`}
+        className={`${
+          mobile ? "block w-full text-left py-2" : ""
+        } text-gray-700 hover:text-blue-600 transition-colors`}
       >
         Home
       </button>
       <button
         onClick={() => scrollToSection("services")}
-        className={`${mobile ? "block w-full text-left py-2" : ""} text-gray-700 hover:text-blue-600 transition-colors`}
+        className={`${
+          mobile ? "block w-full text-left py-2" : ""
+        } text-gray-700 hover:text-blue-600 transition-colors`}
       >
         Services
       </button>
       <button
         onClick={() => scrollToSection("about")}
-        className={`${mobile ? "block w-full text-left py-2" : ""} text-gray-700 hover:text-blue-600 transition-colors`}
+        className={`${
+          mobile ? "block w-full text-left py-2" : ""
+        } text-gray-700 hover:text-blue-600 transition-colors`}
       >
         About
       </button>
       <button
         onClick={() => scrollToSection("testimonials")}
-        className={`${mobile ? "block w-full text-left py-2" : ""} text-gray-700 hover:text-blue-600 transition-colors`}
+        className={`${
+          mobile ? "block w-full text-left py-2" : ""
+        } text-gray-700 hover:text-blue-600 transition-colors`}
       >
         Reviews
       </button>
       <button
         onClick={() => scrollToSection("contact")}
-        className={`${mobile ? "block w-full text-left py-2" : ""} text-gray-700 hover:text-blue-600 transition-colors`}
+        className={`${
+          mobile ? "block w-full text-left py-2" : ""
+        } text-gray-700 hover:text-blue-600 transition-colors`}
       >
         Contact
       </button>
@@ -81,7 +91,9 @@ export default function Navbar() {
                 />
               </svg>
             </div>
-            <span className="text-xl font-bold text-blue-600">Heartland Pool Care</span>
+            <span className="text-xl font-bold text-blue-600">
+              Heartland Pool Care
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -96,7 +108,7 @@ export default function Navbar() {
               onClick={() => window.open("tel:+18162581782", "_blank")}
             >
               <Phone className="w-4 h-4 mr-2" />
-              Call Now
+              Call (816) 258-1782
             </Button>
           </div>
 
@@ -115,7 +127,7 @@ export default function Navbar() {
                   onClick={() => window.open("tel:+18162581782", "_blank")}
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  Call Now
+                  Call (816) 258-1782
                 </Button>
               </div>
             </SheetContent>
